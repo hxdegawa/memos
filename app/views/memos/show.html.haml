@@ -1,6 +1,8 @@
 - model_class = Memo
 .page-header
   %h1= t '.title', :default => model_class.model_name.human.titleize
+.rendered-body
+  = @memo.rendered_body.html_safe
 %dl.dl-horizontal
   %dt
     %strong
