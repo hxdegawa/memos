@@ -5,9 +5,6 @@ class ApplicationController < ActionController::Base
 
   private
 
-  def logged_out?
-  end
-
   def logged_in?
     current_user.present?
   end
